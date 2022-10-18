@@ -184,6 +184,12 @@ conteudo projeto
   padding-top: 50px;
 }
 
+@media (max-width: 400px) {
+  .projeto {
+    width: 100%;
+  }
+}
+
 .projeto-col {
   flex-basis: 32%;
   border-radius: 10px;
@@ -238,7 +244,7 @@ conteudo projeto
   font-size: 32px;
 }
 .layer:hover p {
-  bottom: 15%;
+  bottom: 10px;
   opacity: 1;
 }
 
@@ -249,6 +255,11 @@ conteudo projeto
   margin: auto;
   text-align: center;
   padding-top: 50px;
+}
+@media (max-width: 400px) {
+  .texto {
+    width: 100%;
+  }
 }
 
 /* --------- call to action -------- */
@@ -271,6 +282,9 @@ conteudo projeto
 }
 
 @media (max-width: 700px) {
+  .cta {
+    width: 95%;
+  }
   .cta h1 {
     font-size: 24px;
     padding: 0 10px;
