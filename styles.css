@@ -401,7 +401,7 @@ conteudo projeto
     top: 0;
     right: -200px;
     text-align: left;
-    z-index: 2;
+    z-index: 3;
     transition: 1s;
   }
 
@@ -412,6 +412,7 @@ conteudo projeto
     margin: 10px;
     font-size: 1.5rem;
     cursor: pointer;
+    z-index: 2;
   }
   .fa-bars {
     position: fixed;
@@ -427,6 +428,10 @@ conteudo projeto
   }
   .row {
     flex-direction: column;
+    margin: 0;
+  }
+  .metalica {
+    width: 100%;
   }
   .projeto-col {
     max-height: 400px;
