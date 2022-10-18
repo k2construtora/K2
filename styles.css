@@ -5,7 +5,6 @@
   font-family: "Montserrat", sans-serif;
   font-family: "Roboto", sans-serif;
 }
-
 :root {
   --color-font: #345c72;
   --color-font-secondary: rgb(110, 110, 110);
@@ -39,12 +38,6 @@ p {
   background-size: cover;
   position: relative;
 }
-@media (max-width: 57rem) {
-  .header-bar {
-    background-size: 900px;
-    background-repeat: no-repeat;
-  }
-}
 nav {
   display: flex;
   padding: 2% 6%;
@@ -65,7 +58,6 @@ nav img {
   padding: 8px 12px;
   position: relative;
 }
-
 .nav-links ul li a {
   color: var(--color-primary);
   text-decoration: none;
@@ -130,72 +122,26 @@ nav img {
 nav .fa-solid {
   display: none;
 }
-@media (max-width: 40rem) {
-  .text-box h1 {
-    font-size: 20px;
-  }
-  .nav-links ul li {
-    display: block;
-  }
-  .nav-links {
-    position: fixed;
-    background-color: var(--color-secondary);
-    height: 100vh;
-    width: 200px;
-    top: 0;
-    right: -200px;
-    text-align: left;
-    z-index: 2;
-    transition: 1s;
-  }
-
-  nav .fa-solid {
-    /* close button */
-    display: block;
-    color: var(--color-primary);
-    margin: 10px;
-    font-size: 1.5rem;
-    cursor: pointer;
-  }
-  .nav-links ul {
-    padding: 30px;
-  }
-  .row {
-    flex-direction: column;
-  }
-}
 
 /* --------------------
 conteudo projeto
 -------------------- */
+
 .row {
   margin: 5%;
   display: flex;
   justify-content: space-between;
 }
-/* @media (max-width: 400px) {
-  .row {
-    margin: 0;
-  }
-} */
 
 .sobre {
   margin: 6rem auto;
 }
-
 .projeto {
   width: 80%;
   margin: auto;
   text-align: center;
   padding-top: 50px;
 }
-
-@media (max-width: 400px) {
-  .projeto {
-    width: 100%;
-  }
-}
-
 .projeto-col {
   flex-basis: 32%;
   border-radius: 10px;
@@ -262,11 +208,6 @@ conteudo projeto
   text-align: center;
   padding-top: 50px;
 }
-@media (max-width: 400px) {
-  .texto {
-    width: 100%;
-  }
-}
 
 /* --------- call to action -------- */
 
@@ -285,16 +226,6 @@ conteudo projeto
   color: #fff;
   margin-bottom: 40px;
   padding: 0;
-}
-
-@media (max-width: 700px) {
-  .cta {
-    width: 95%;
-  }
-  .cta h1 {
-    font-size: 24px;
-    padding: 0 10px;
-  }
 }
 
 /* ------footer-------- */
@@ -346,19 +277,12 @@ conteudo projeto
 .sub-header p {
   color: #fff;
 }
-
 .metalica {
   width: 80%;
   margin: auto;
   padding-top: 80px;
   padding-bottom: 50px;
 }
-@media (max-width: 400px) {
-  .metalica {
-    width: 100%;
-  }
-}
-
 .metalica-col {
   flex-basis: 48%;
   padding: 30px 2px;
@@ -412,19 +336,7 @@ conteudo projeto
 .contato {
   margin: auto;
 }
-@media (max-width: 700px) {
-  .location {
-    width: 100%;
-    margin: 0;
-  }
-  .contato {
-    width: 100%;
-    margin: 0;
-  }
-  .contato section {
-    flex-basis: 100%;
-  }
-}
+
 .row section {
   width: 100%;
   margin: 0;
@@ -464,4 +376,67 @@ conteudo projeto
   outline: none;
   border: 1px solid #ccc;
   box-sizing: border-box;
+}
+
+/* -----------------media queries---------- */
+
+@media (max-width: 57rem) {
+  .header-bar {
+    background-size: 900px;
+    background-repeat: no-repeat;
+  }
+}
+@media (max-width: 40rem) {
+  .text-box h1 {
+    font-size: 20px;
+  }
+  .nav-links ul li {
+    display: block;
+  }
+  .nav-links {
+    position: fixed;
+    background-color: var(--color-secondary);
+    height: 100vh;
+    width: 200px;
+    top: 0;
+    right: -200px;
+    text-align: left;
+    z-index: 2;
+    transition: 1s;
+  }
+
+  nav .fa-solid {
+    /* close button */
+    display: block;
+    color: var(--color-primary);
+    margin: 10px;
+    font-size: 1.5rem;
+    cursor: pointer;
+  }
+  .fa-bars {
+    position: fixed;
+    top: 0;
+    right: 0;
+    margin: 0;
+    background-color: var(--color-bg-footer);
+    padding: 15px;
+    border-radius: 50%;
+  }
+  .nav-links ul {
+    padding: 30px;
+  }
+  .row {
+    flex-direction: column;
+  }
+  .projeto-col {
+    max-height: 400px;
+    margin: auto auto 30px;
+  }
+  .cta {
+    width: 95%;
+  }
+  .cta h1 {
+    font-size: 24px;
+    padding: 0 10px;
+  }
 }
