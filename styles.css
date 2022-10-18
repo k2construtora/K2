@@ -12,6 +12,7 @@
   --color-primary: #fff;
   --color-secondary: #345c72;
   --color-secondary-opacity: #345c72;
+  --color-bg-footer: hsl(233, 12%, 13%);
 }
 h1 {
   color: var(--color-font);
@@ -302,22 +303,28 @@ conteudo projeto
   width: 100%;
   text-align: center;
   padding: 30px 0;
+  background-color: var(--color-bg-footer);
 }
 
 .footer h1 {
   margin-bottom: 25px;
   margin-top: 20px;
   font-weight: 600;
+  color: var(--color-primary);
+}
+.footer p {
+  color: var(--color-primary);
 }
 
 .icons [class*="brands"] {
-  color: var(--color-secondary);
+  color: var(--color-primary);
+  font-size: 30px;
   margin: 0 13px;
   cursor: pointer;
   padding: 18px 0;
 }
 .fa-heart {
-  color: var(--color-secondary);
+  color: var(--color-primary);
 }
 
 /* ---------------------------- METALICA PÁGINA -------------------- */
