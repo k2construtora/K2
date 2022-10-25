@@ -10,7 +10,7 @@
   --color-font-secondary: rgb(110, 110, 110);
   --color-primary: #fff;
   --color-secondary: #345c72;
-  --color-secondary-opacity: #345c72;
+  --color-secondary-opacity: #345c72c3;
   --color-bg-footer: hsl(233, 12%, 13%);
 }
 h1 {
@@ -46,7 +46,7 @@ nav {
 }
 nav img {
   height: 50px;
-  filter: brightness(9999%);
+  /* filter: brightness(9999%); */
 }
 .nav-links {
   flex: 1;
@@ -68,7 +68,7 @@ nav img {
   content: "";
   width: 0%;
   height: 2px;
-  background-color: var(--color-primary);
+  background-color: orange;
   display: block;
   margin: auto;
   transition: 0.5s;
@@ -106,7 +106,7 @@ nav img {
   color: var(--color-primary);
   border: 1px solid var(--color-primary);
   padding: 12px 34px;
-  font-size: 0.9rem;
+  font-size: 1rem;
   background: transparent;
   position: relative;
   cursor: pointer;
@@ -115,6 +115,24 @@ nav img {
   border: 1px solid var(--color-secondary);
   background: var(--color-secondary);
   transition: 1s;
+}
+
+.btn-inicio {
+  font-size: 2rem;
+  border-radius: 10px;
+  border: 1px solid rgba(181, 84, 2, 1);
+  background: rgb(181, 84, 2);
+  background: linear-gradient(
+    0deg,
+    rgba(181, 84, 2, 1) 28%,
+    rgba(255, 169, 0, 0.9850315126050421) 100%
+  );
+}
+.btn-inicio:hover {
+  border: 1px solid #fff;
+  background: orange;
+  transition: 0s;
+  box-shadow: 0px 0px 5px 1px rgba(255, 255, 255, 0.27);
 }
 
 /* ----------- Mobile ---------- */
